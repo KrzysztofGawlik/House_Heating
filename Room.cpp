@@ -1,16 +1,48 @@
-#include "Room.h"
+#include "./Room.h"
 #include <iostream>
 #include <cmath>
+#include <string>
 
-Room::Room(void) { 
-    temperature = 15.;
-    targetTemp = 22.;
-    factor = 1;
+const std::string defS = "unknown_room";
+const float defT = 15., defTT = 22., defF = 1;
+
+Room::Room() { 
+    temperature = defT;
+    targetTemp = defTT;
+    factor = defF;
+    name = defS;
+}
+Room::Room(std::string s) { 
+    temperature = defT;
+    targetTemp = defTT;
+    factor = defF;
+    name = s;
+}
+Room::Room(std::string s, float f) { 
+    temperature = defT;
+    targetTemp = defTT;
+    factor = f;
+    name = s;
+}
+Room::Room(std::string s, float f, float tt) { 
+    temperature = defT;
+    targetTemp = tt;
+    factor = f;
+    name = s;
+}
+Room::Room(std::string s, float f, float tt, float t) { 
+    temperature = t;
+    targetTemp = tt;
+    factor = f;
+    name = s;
 }
 Room::~Room(void) {}
 
 float Room::getTemp(void) {
     return temperature;
+}
+void Room::setTemp(float temp){
+    temperature = temp;
 }
 float Room::getTargetTemp(void) { 
     return targetTemp; 
@@ -19,7 +51,7 @@ void Room::setTargetTemp(float target) {
     targetTemp = target; 
 }
 void Room::outsideImpact(float outsideTemp) {
-    float trendValue = (abs(temperature - outsideTemp) / 100 * factor);
+    float trendValue = (fabs(temperature - outsideTemp) / 100 * factor);
     if(temperature > outsideTemp)
         temperature -= trendValue;
     else 
