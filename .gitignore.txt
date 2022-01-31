@@ -1,4 +1,2 @@
-.vscode/
-.vscode/*.exe
-.vscode/*.code-workspace
-!.vscode/*.json
+/.vscode/*
+!/.vscode/*.json
