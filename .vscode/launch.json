@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${fileDirname}\\.vscode\\$House_Heating_App.exe",
             "args": [],
-            "stopAtEntry": true,
+            "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,

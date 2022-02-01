@@ -13,7 +13,7 @@ class Room {
         Room(std::string s, float f, float tt, float t);
         ~Room(void);
         float getTemp(void);
-        void setTemp(float temp);
+        float setTemp(float temp);
         float getTargetTemp(void);
         void setTargetTemp(float target);
         void outsideImpact(float outsideTemp);

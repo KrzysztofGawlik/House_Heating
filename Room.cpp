@@ -41,9 +41,6 @@ Room::~Room(void) {}
 float Room::getTemp(void) {
     return temperature;
 }
-void Room::setTemp(float temp){
-    temperature = temp;
-}
 float Room::getTargetTemp(void) { 
     return targetTemp; 
 }
