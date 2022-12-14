@@ -1,4 +1,7 @@
-#include <string>
+#pragma once
+#include <cmath>
+#include <iostream>
+
 class Room {
     private:
         float 
@@ -13,7 +16,7 @@ class Room {
         Room(std::string s, float f, float tt, float t);
         ~Room(void);
         float getTemp(void);
-        float setTemp(float temp);
+        void setTemp(float temp);
         float getTargetTemp(void);
         void setTargetTemp(float target);
         void outsideImpact(float outsideTemp);

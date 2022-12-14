@@ -1,7 +1,4 @@
 #include "./Room.h"
-#include <iostream>
-#include <cmath>
-#include <string>
 
 const std::string defS = "unknown_room";
 const float defT = 15., defTT = 22., defF = 1;
@@ -43,6 +40,9 @@ float Room::getTemp(void) {
 }
 float Room::getTargetTemp(void) { 
     return targetTemp; 
+}
+void Room::setTemp(float temp){
+    this->temperature = temp;
 }
 void Room::setTargetTemp(float target) { 
     targetTemp = target; 
