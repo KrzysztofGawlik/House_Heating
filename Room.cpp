@@ -48,7 +48,7 @@ void Room::setTargetTemp(float target) {
     targetTemp = target; 
 }
 void Room::outsideImpact(float outsideTemp) {
-    float trendValue = (fabs(temperature - outsideTemp) / 100 * factor);
+    float trendValue = (fabs(temperature - outsideTemp) / 100 * factor); // fabs() - float absolute value
     if(temperature > outsideTemp)
         temperature -= trendValue;
     else 

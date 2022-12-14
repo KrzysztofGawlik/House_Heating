@@ -19,7 +19,7 @@ int main(void){
     do {
         timer += 0.25;
         if( (int) timer == timer )
-            cout << endl << "-- " << (int) timer << " hour(s) passed --------------------------------------" << endl; 
+            cout << endl << "-- " << (int) timer << " hour(s) passed " << string(38, '-') << endl; 
         for(int i = 0; i < sizeof(rooms)/sizeof(rooms[0]); i++) {
             rooms[i].outsideImpact(outsideTemp);
             if( (int) timer == timer )

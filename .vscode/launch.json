@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\.vscode\\$House_Heating_App.exe",
+            "program": "${fileDirname}\\.vscode\\House_Heating_App.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
