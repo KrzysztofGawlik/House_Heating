@@ -1,7 +1,5 @@
 #include "./Room.h"
 #include "./HeatingSystem.h"
-#include <iostream>
-#include <cmath>
 #include <iomanip>
 using namespace std;
 
